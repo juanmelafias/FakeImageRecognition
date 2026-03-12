@@ -1,4 +1,4 @@
-# .gitignore for AI Image Detection Project
+# .gitignore for AI Image Detection & Face Recognition Projects
 
 # Python
 __pycache__/
@@ -30,29 +30,44 @@ ENV/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb_checkpoints
 *.ipynb
 
-# PyTorch
+# PyTorch models and checkpoints
 *.pth
 *.pt
 *.ckpt
 
-# Data
+# Data files
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+# FaceRecognition specific data
+FaceRecognition/data/raw/lfw/*
+FaceRecognition/data/raw/*.tgz
+FaceRecognition/data/raw/*.tar.gz
+FaceRecognition/data/processed/*
 
 # Models (except .gitkeep)
 models/*
 !models/.gitkeep
+FaceRecognition/models/*.pth
+!FaceRecognition/models/.gitkeep
 
 # TensorBoard
 runs/
-logs/
+logs/*
+!logs/.gitkeep
+FaceRecognition/logs/*
+!FaceRecognition/logs/.gitkeep
+events.out.tfevents.*
 
 # Results
-results/
+results/*
+!results/.gitkeep
+FaceRecognition/results/*
+!FaceRecognition/results/.gitkeep
 *.png
 *.jpg
 *.jpeg
@@ -73,3 +88,6 @@ kaggle.json
 
 # Environment variables
 .env
+
+# Text files
+*.txt

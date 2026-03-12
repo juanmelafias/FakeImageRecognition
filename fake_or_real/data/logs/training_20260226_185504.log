@@ -1,0 +1,11 @@
+2026-02-26 18:55:04 | INFO | Log file created: /Users/U10086216/Library/CloudStorage/OneDrive-BASF/Documents/ReposMac/ImageRecognition/logs/training_20260226_185504.log
+2026-02-26 18:55:04 | INFO | ============================================================
+2026-02-26 18:55:04 | INFO | Starting AI-Generated Image Detection Training
+2026-02-26 18:55:04 | INFO | Model: resnet18
+2026-02-26 18:55:04 | INFO | Device: mps
+2026-02-26 18:55:04 | INFO | Batch size: 128
+2026-02-26 18:55:04 | INFO | Learning rate: 0.001
+2026-02-26 18:55:04 | INFO | Max epochs: 50
+2026-02-26 18:55:04 | INFO | Early stopping patience: 10
+2026-02-26 18:55:04 | INFO | ============================================================
+2026-02-26 18:55:04 | INFO | Data loaded - Train: 80000, Val: 20000, Test: 20000
